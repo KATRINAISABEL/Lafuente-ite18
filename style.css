@@ -13,8 +13,7 @@ html {
 
 body {
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    background-attachment: fixed;
+    background-color: #f8f9fa;
     color: #2d3748;
     line-height: 1.8;
     min-height: 100vh;
@@ -22,13 +21,12 @@ body {
 
 /* ========== NAVIGATION BAR ========== */
 .navbar {
-    background: linear-gradient(135deg, #1e3a8a 0%, #2d1b69 100%);
+    background-color: #2c3e50;
     padding: 1.2rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .navbar ul {
@@ -75,9 +73,9 @@ body {
 }
 
 .navbar a.active {
-    background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+    background-color: #3498db;
     color: white;
-    box-shadow: 0 8px 25px rgba(0, 212, 255, 0.4);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
 }
 
 /* ========== CONTAINER ========== */
@@ -89,38 +87,25 @@ body {
 
 /* ========== ABOUT SECTION ========== */
 .about-section {
-    background: rgba(255, 255, 255, 0.95);
+    background-color: #ffffff;
     padding: 3rem;
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     margin-bottom: 2.5rem;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid #e8eef5;
     animation: slideUp 0.8s ease 0.2s both;
     position: relative;
     overflow: hidden;
 }
 
 .about-section::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -50%;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
+    content: none;
 }
 
 .about-section h1 {
-    color: #1e3a8a;
+    color: #2c3e50;
     font-size: 2.8rem;
     margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
     font-weight: 800;
     letter-spacing: -1px;
     position: relative;
@@ -132,7 +117,7 @@ body {
     display: block;
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, #00d4ff, #0099ff, transparent);
+    background-color: #3498db;
     margin-top: 0.8rem;
     border-radius: 2px;
 }
@@ -168,15 +153,15 @@ body {
 }
 
 .skills-list li {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-color: #e8f4f8;
     padding: 1.2rem 1.8rem;
-    border-radius: 15px;
+    border-radius: 12px;
     font-size: 1.1rem;
     font-weight: 600;
-    color: white;
+    color: #2c3e50;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     cursor: pointer;
-    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.1);
     border: 2px solid transparent;
     position: relative;
     overflow: hidden;
@@ -195,8 +180,9 @@ body {
 
 .skills-list li:hover {
     transform: translateY(-8px) scale(1.05);
-    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.5);
-    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 12px 28px rgba(52, 152, 219, 0.25);
+    border-color: #3498db;
+    background-color: #d4eef8;
 }
 
 .skills-list li:hover::before {
@@ -205,41 +191,28 @@ body {
 
 /* ========== LAYOUT EXERCISE SECTION ========== */
 .layout-exercise {
-    background: rgba(255, 255, 255, 0.95);
+    background-color: #ffffff;
     padding: 3rem;
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e8eef5;
     animation: slideUp 0.8s ease 0.4s both;
     position: relative;
     overflow: hidden;
 }
 
 .layout-exercise::after {
-    content: '';
-    position: absolute;
-    bottom: -50%;
-    left: -50%;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
+    content: none;
 }
 
 .layout-title {
     text-align: center;
-    color: #1e3a8a;
+    color: #2c3e50;
     font-size: 2.5rem;
     margin-bottom: 2.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 800;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
     position: relative;
     z-index: 1;
 }
@@ -249,7 +222,7 @@ body {
     display: block;
     width: 120px;
     height: 5px;
-    background: linear-gradient(90deg, #00d4ff, #0099ff, transparent);
+    background-color: #3498db;
     margin: 1rem auto 0;
     border-radius: 3px;
 }
@@ -262,12 +235,11 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    border-radius: 15px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(240, 245, 255, 0.8) 100%);
-    border: 2px solid rgba(102, 126, 234, 0.2);
+    border-radius: 12px;
+    background-color: #f8f9fa;
+    border: 2px solid #e0e7ff;
     max-height: 320px;
     overflow: hidden;
-    backdrop-filter: blur(10px);
     position: relative;
     z-index: 1;
 }
@@ -334,44 +306,39 @@ body {
     }
 }
 
-/* ========== BOX COLORS WITH GRADIENTS ========== */
+/* ========== BOX COLORS WITH SOLID COLORS ========== */
 .box-1 {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background-color: #e74c3c;
     animation: pulse 2s ease-in-out infinite;
 }
 
 .box-2 {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    background-color: #3498db;
     animation: pulse 2s ease-in-out infinite 0.2s;
 }
 
 .box-3 {
-    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    background-color: #2ecc71;
     animation: pulse 2s ease-in-out infinite 0.4s;
 }
 
 .box-4 {
-    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    background-color: #f39c12;
     animation: pulse 2s ease-in-out infinite 0.6s;
 }
 
 .box-5 {
-    background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+    background-color: #9b59b6;
     animation: pulse 2s ease-in-out infinite 0.8s;
 }
 
 .box-6 {
-    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    background-color: #1abc9c;
     animation: pulse 2s ease-in-out infinite 1s;
-    color: #333;
 }
 
 /* ========== RESPONSIVE DESIGN ========== */
 @media (max-width: 768px) {
-    body {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    }
-
     .navbar ul {
         gap: 1.5rem;
     }
